@@ -1,7 +1,7 @@
 {
   "name": "clai",
-  "version": "0.1.0",
-  "description": "Natural language to shell command — type `ai kill process on port 8001` and the command lands on your prompt, ready to run.",
+  "version": "0.2.0",
+  "description": "Natural language to shell command — type `ai kill process on port 8001` and the command lands on your prompt, ready to run. Context-aware, fixes failed commands, learns your style.",
   "type": "module",
   "bin": {
     "clai": "bin/clai.js"
