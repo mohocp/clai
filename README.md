@@ -12,21 +12,27 @@ buffer and *you* press Enter.
 
 ## Install
 
-```sh
-cd clai
-npm install -g .            # zero dependencies, installs the `clai` binary
+One command (requires Node.js 18+):
 
-# shell integration (this is what pre-fills your prompt)
-echo 'eval "$(clai shell-init zsh)"'  >> ~/.zshrc    # zsh
-echo 'eval "$(clai shell-init bash)"' >> ~/.bashrc   # bash
-exec $SHELL
+```sh
+curl -fsSL https://raw.githubusercontent.com/mohocp/clai/main/install.sh | sh
+```
+
+or, with npm:
+
+```sh
+npm install -g mohocp/clai
 ```
 
 ## Configure
 
 ```sh
-ai setup
+clai setup
 ```
+
+Setup also offers to add the shell integration to your `~/.zshrc` /
+`~/.bashrc` for you — that's what makes commands land **pre-filled on your
+prompt** instead of just being printed. Say yes, restart your shell, done.
 
 Pick a provider and model interactively:
 
